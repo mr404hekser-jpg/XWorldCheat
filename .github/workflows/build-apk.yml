@@ -10,7 +10,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    
     steps:
     - uses: actions/checkout@v4
     
@@ -20,12 +19,9 @@ jobs:
         distribution: 'adopt'
         cache: gradle
 
-    - name: Setup Android SDK
-      run: |
-        echo "SDK setup..."
-        chmod +x ./gradlew
+    - run: chmod +x ./gradlew
 
-    - name: Build Release APK
+    - name: Build APK
       run: ./gradlew --no-daemon assembleRelease
       env:
         KEYSTORE_FILE: ${{ secrets.KEYSTORE_FILE }}
@@ -33,8 +29,7 @@ jobs:
         KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
         KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
 
-    - name: Decode & Sign Keystore
-      run: |
+    - run: |
         echo "${{ secrets.KEYSTORE_FILE }}" | base64 -d > ~/keystore.jks
         $ANDROID_HOME/build-tools/31.0.0/apksigner sign \
           --ks ~/keystore.jks \
@@ -44,8 +39,7 @@ jobs:
           --out XWorldEscape-Cheat.apk \
           app/build/outputs/apk/release/app-release-unsigned.apk
 
-    - name: Upload APK
-      uses: actions/upload-artifact@v4
+    - uses: actions/upload-artifact@v4
       with:
         name: XWorldEscape-Cheat-APK
         path: XWorldEscape-Cheat.apk
