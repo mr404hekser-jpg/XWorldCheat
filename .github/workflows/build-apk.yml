@@ -21,30 +21,21 @@ jobs:
         cache: gradle
 
     - name: Setup Android SDK
-      uses: android-actions/setup-android@v3
-      with:
-        cmdline-tools-version: 9.0
-        accept-android-sdk-licenses: true
-        log-accepted-android-sdk-licenses: true
-        packages: |
-          build-tools;31.0.0
-          platforms;android-31
-
-    - run: chmod +x ./gradlew
+      run: |
+        echo "SDK setup..."
+        chmod +x ./gradlew
 
     - name: Build Release APK
-      run: ./gradlew assembleRelease
+      run: ./gradlew --no-daemon assembleRelease
       env:
         KEYSTORE_FILE: ${{ secrets.KEYSTORE_FILE }}
         KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
         KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
         KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
 
-    - name: Decode Keystore
-      run: echo "${{ secrets.KEYSTORE_FILE }}" | base64 -d > ~/keystore.jks
-
-    - name: Sign APK
+    - name: Decode & Sign Keystore
       run: |
+        echo "${{ secrets.KEYSTORE_FILE }}" | base64 -d > ~/keystore.jks
         $ANDROID_HOME/build-tools/31.0.0/apksigner sign \
           --ks ~/keystore.jks \
           --ks-pass pass:"${{ secrets.KEYSTORE_PASSWORD }}" \
