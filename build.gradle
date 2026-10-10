@@ -24,16 +24,6 @@ android {
     buildTypes {
         release {
             minifyEnabled false
-            signingConfig signingConfigs.release
-        }
-    }
-
-    signingConfigs {
-        release {
-            storeFile file(System.getenv("HOME") + "/keystore.jks")
-            storePassword System.getenv("KEYSTORE_PASSWORD") ?: ""
-            keyAlias System.getenv("KEY_ALIAS") ?: ""
-            keyPassword System.getenv("KEY_PASSWORD") ?: ""
         }
     }
 
