@@ -20,10 +20,15 @@ jobs:
         distribution: 'adopt'
         cache: gradle
 
-    - uses: android-actions/setup-android@v3
+    - name: Setup Android SDK
+      uses: android-actions/setup-android@v3
       with:
-        api-level: 31
-        ndk-version: 21.4.7075529
+        cmdline-tools-version: 9.0
+        accept-android-sdk-licenses: true
+        log-accepted-android-sdk-licenses: true
+        packages: |
+          build-tools;31.0.0
+          platforms;android-31
 
     - run: chmod +x ./gradlew
 
@@ -34,11 +39,6 @@ jobs:
         KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
         KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
         KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
-
-    - name: Check APK Output
-      run: |
-        ls -lh app/build/outputs/apk/release/
-        find app/build/outputs -name "*.apk" -type f
 
     - name: Decode Keystore
       run: echo "${{ secrets.KEYSTORE_FILE }}" | base64 -d > ~/keystore.jks
