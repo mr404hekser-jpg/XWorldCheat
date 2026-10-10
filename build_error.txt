@@ -1,0 +1,207 @@
+build	Set up job	﻿2026-10-10T02:10:50.4773457Z Current runner version: '2.337.0'
+build	Set up job	2026-10-10T02:10:50.4799560Z ##[group]Runner Image Provisioner
+build	Set up job	2026-10-10T02:10:50.4800464Z Hosted Compute Agent
+build	Set up job	2026-10-10T02:10:50.4801357Z Version: 20261002.596
+build	Set up job	2026-10-10T02:10:50.4802056Z Commit: c3d12f3313a95f25162a1503be624f3b0617f8c0
+build	Set up job	2026-10-10T02:10:50.4802820Z Build Date: 2026-10-02T22:28:27Z
+build	Set up job	2026-10-10T02:10:50.4803535Z Worker ID: {abcc995d-ef97-4a93-833c-a881ec8d480f}
+build	Set up job	2026-10-10T02:10:50.4804316Z Region: eastus2
+build	Set up job	2026-10-10T02:10:50.4804924Z Cloud: Azure
+build	Set up job	2026-10-10T02:10:50.4805471Z ##[endgroup]
+build	Set up job	2026-10-10T02:10:50.4807112Z ##[group]Operating System
+build	Set up job	2026-10-10T02:10:50.4807846Z Ubuntu
+build	Set up job	2026-10-10T02:10:50.4808388Z 24.04.5
+build	Set up job	2026-10-10T02:10:50.4809329Z LTS
+build	Set up job	2026-10-10T02:10:50.4809875Z ##[endgroup]
+build	Set up job	2026-10-10T02:10:50.4810423Z ##[group]Runner Image
+build	Set up job	2026-10-10T02:10:50.4811702Z Image: ubuntu-24.04
+build	Set up job	2026-10-10T02:10:50.4812317Z Version: 20261004.327.1
+build	Set up job	2026-10-10T02:10:50.4813520Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261004.327/images/ubuntu/Ubuntu2404-Readme.md
+build	Set up job	2026-10-10T02:10:50.4815374Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261004.327
+build	Set up job	2026-10-10T02:10:50.4816417Z ##[endgroup]
+build	Set up job	2026-10-10T02:10:50.4817700Z ##[group]GITHUB_TOKEN Permissions
+build	Set up job	2026-10-10T02:10:50.4819927Z Contents: read
+build	Set up job	2026-10-10T02:10:50.4820792Z Metadata: read
+build	Set up job	2026-10-10T02:10:50.4821600Z Packages: read
+build	Set up job	2026-10-10T02:10:50.4822174Z ##[endgroup]
+build	Set up job	2026-10-10T02:10:50.4824309Z Secret source: Actions
+build	Set up job	2026-10-10T02:10:50.4825319Z Cache mode: write
+build	Set up job	2026-10-10T02:10:50.4826491Z Prepare workflow directory
+build	Set up job	2026-10-10T02:10:50.5159965Z Prepare all required actions
+build	Set up job	2026-10-10T02:10:50.5207993Z Getting action download info
+build	Set up job	2026-10-10T02:10:50.7673805Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+build	Set up job	2026-10-10T02:10:50.8526333Z Download action repository 'actions/setup-java@v4' (SHA:cf277c60eb25467037889841efdb72551f06f6c3)
+build	Set up job	2026-10-10T02:10:51.1537164Z Download action repository 'android-actions/setup-android@v3' (SHA:9fc6c4e9069bf8d3d10b2204b1fb8f6ef7065407)
+build	Set up job	2026-10-10T02:10:51.3132336Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+build	Set up job	2026-10-10T02:10:51.5586194Z Complete job name: build
+build	Run actions/checkout@v4	﻿2026-10-10T02:10:51.6390062Z ##[group]Run actions/checkout@v4
+build	Run actions/checkout@v4	2026-10-10T02:10:51.6391224Z with:
+build	Run actions/checkout@v4	2026-10-10T02:10:51.6391721Z   repository: mr404hekser-jpg/XWorldCheat
+build	Run actions/checkout@v4	2026-10-10T02:10:51.6395702Z   token: ***
+build	Run actions/checkout@v4	2026-10-10T02:10:51.6396149Z   ssh-strict: true
+build	Run actions/checkout@v4	2026-10-10T02:10:51.6396595Z   ssh-user: git
+build	Run actions/checkout@v4	2026-10-10T02:10:51.6397043Z   persist-credentials: true
+build	Run actions/checkout@v4	2026-10-10T02:10:51.6397546Z   clean: true
+build	Run actions/checkout@v4	2026-10-10T02:10:51.6398011Z   sparse-checkout-cone-mode: true
+build	Run actions/checkout@v4	2026-10-10T02:10:51.6398646Z   fetch-depth: 1
+build	Run actions/checkout@v4	2026-10-10T02:10:51.6399156Z   fetch-tags: false
+build	Run actions/checkout@v4	2026-10-10T02:10:51.6399847Z   show-progress: true
+build	Run actions/checkout@v4	2026-10-10T02:10:51.6400443Z   lfs: false
+build	Run actions/checkout@v4	2026-10-10T02:10:51.6401293Z   submodules: false
+build	Run actions/checkout@v4	2026-10-10T02:10:51.6401872Z   set-safe-directory: true
+build	Run actions/checkout@v4	2026-10-10T02:10:51.6402520Z   allow-unsafe-pr-checkout: false
+build	Run actions/checkout@v4	2026-10-10T02:10:51.6403555Z ##[endgroup]
+build	Run actions/checkout@v4	2026-10-10T02:10:51.7461788Z Syncing repository: mr404hekser-jpg/XWorldCheat
+build	Run actions/checkout@v4	2026-10-10T02:10:51.7464343Z ##[group]Getting Git version info
+build	Run actions/checkout@v4	2026-10-10T02:10:51.7465405Z Working directory is '/home/runner/work/XWorldCheat/XWorldCheat'
+build	Run actions/checkout@v4	2026-10-10T02:10:51.7466895Z [command]/usr/bin/git version
+build	Run actions/checkout@v4	2026-10-10T02:10:51.7534490Z git version 2.55.0
+build	Run actions/checkout@v4	2026-10-10T02:10:51.7560061Z ##[endgroup]
+build	Run actions/checkout@v4	2026-10-10T02:10:51.7586402Z Temporarily overriding HOME='/home/runner/work/_temp/e041ec97-6371-446c-b9dd-b5f99bd17061' before making global git config changes
+build	Run actions/checkout@v4	2026-10-10T02:10:51.7589185Z Adding repository directory to the temporary git global config as a safe directory
+build	Run actions/checkout@v4	2026-10-10T02:10:51.7591458Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/XWorldCheat/XWorldCheat
+build	Run actions/checkout@v4	2026-10-10T02:10:51.7646585Z Deleting the contents of '/home/runner/work/XWorldCheat/XWorldCheat'
+build	Run actions/checkout@v4	2026-10-10T02:10:51.7651053Z ##[group]Initializing the repository
+build	Run actions/checkout@v4	2026-10-10T02:10:51.7656733Z [command]/usr/bin/git init /home/runner/work/XWorldCheat/XWorldCheat
+build	Run actions/checkout@v4	2026-10-10T02:10:51.7778146Z hint: Using 'master' as the name for the initial branch. This default branch name
+build	Run actions/checkout@v4	2026-10-10T02:10:51.7780251Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+build	Run actions/checkout@v4	2026-10-10T02:10:51.7782662Z hint: to use in all of your new repositories, which will suppress this warning,
+build	Run actions/checkout@v4	2026-10-10T02:10:51.7784134Z hint: call:
+build	Run actions/checkout@v4	2026-10-10T02:10:51.7785094Z hint:
+build	Run actions/checkout@v4	2026-10-10T02:10:51.7786176Z hint: 	git config --global init.defaultBranch <name>
+build	Run actions/checkout@v4	2026-10-10T02:10:51.7787018Z hint:
+build	Run actions/checkout@v4	2026-10-10T02:10:51.7788264Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+build	Run actions/checkout@v4	2026-10-10T02:10:51.7790097Z hint: 'development'. The just-created branch can be renamed via this command:
+build	Run actions/checkout@v4	2026-10-10T02:10:51.7791857Z hint:
+build	Run actions/checkout@v4	2026-10-10T02:10:51.7792458Z hint: 	git branch -m <name>
+build	Run actions/checkout@v4	2026-10-10T02:10:51.7793339Z hint:
+build	Run actions/checkout@v4	2026-10-10T02:10:51.7794571Z hint: Disable this message with "git config set advice.defaultBranchName false"
+build	Run actions/checkout@v4	2026-10-10T02:10:51.7796698Z Initialized empty Git repository in /home/runner/work/XWorldCheat/XWorldCheat/.git/
+build	Run actions/checkout@v4	2026-10-10T02:10:51.7799418Z [command]/usr/bin/git remote add origin https://github.com/mr404hekser-jpg/XWorldCheat
+build	Run actions/checkout@v4	2026-10-10T02:10:51.7856331Z ##[endgroup]
+build	Run actions/checkout@v4	2026-10-10T02:10:51.7858140Z ##[group]Disabling automatic garbage collection
+build	Run actions/checkout@v4	2026-10-10T02:10:51.7860301Z [command]/usr/bin/git config --local gc.auto 0
+build	Run actions/checkout@v4	2026-10-10T02:10:51.7896687Z ##[endgroup]
+build	Run actions/checkout@v4	2026-10-10T02:10:51.7898767Z ##[group]Setting up auth
+build	Run actions/checkout@v4	2026-10-10T02:10:51.7904732Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build	Run actions/checkout@v4	2026-10-10T02:10:51.7940758Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build	Run actions/checkout@v4	2026-10-10T02:10:51.8337337Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build	Run actions/checkout@v4	2026-10-10T02:10:51.8381212Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build	Run actions/checkout@v4	2026-10-10T02:10:51.8608678Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+build	Run actions/checkout@v4	2026-10-10T02:10:51.8649217Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+build	Run actions/checkout@v4	2026-10-10T02:10:51.8877887Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+build	Run actions/checkout@v4	2026-10-10T02:10:51.8920475Z ##[endgroup]
+build	Run actions/checkout@v4	2026-10-10T02:10:51.8922757Z ##[group]Fetching the repository
+build	Run actions/checkout@v4	2026-10-10T02:10:51.8932716Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +7bab0a784e334aeb714c50dcbfa443f8ee5a08e7:refs/remotes/origin/main
+build	Run actions/checkout@v4	2026-10-10T02:10:52.0999735Z From https://github.com/mr404hekser-jpg/XWorldCheat
+build	Run actions/checkout@v4	2026-10-10T02:10:52.1002378Z  * [new ref]         7bab0a784e334aeb714c50dcbfa443f8ee5a08e7 -> origin/main
+build	Run actions/checkout@v4	2026-10-10T02:10:52.1006144Z ##[endgroup]
+build	Run actions/checkout@v4	2026-10-10T02:10:52.1007157Z ##[group]Determining the checkout info
+build	Run actions/checkout@v4	2026-10-10T02:10:52.1009315Z ##[endgroup]
+build	Run actions/checkout@v4	2026-10-10T02:10:52.1016631Z [command]/usr/bin/git sparse-checkout disable
+build	Run actions/checkout@v4	2026-10-10T02:10:52.1076513Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+build	Run actions/checkout@v4	2026-10-10T02:10:52.1112697Z ##[group]Checking out the ref
+build	Run actions/checkout@v4	2026-10-10T02:10:52.1117732Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+build	Run actions/checkout@v4	2026-10-10T02:10:52.1194410Z Switched to a new branch 'main'
+build	Run actions/checkout@v4	2026-10-10T02:10:52.1200789Z branch 'main' set up to track 'origin/main'.
+build	Run actions/checkout@v4	2026-10-10T02:10:52.1254117Z ##[endgroup]
+build	Run actions/checkout@v4	2026-10-10T02:10:52.1258661Z [command]/usr/bin/git log -1 --format=%H
+build	Run actions/checkout@v4	2026-10-10T02:10:52.1288434Z 7bab0a784e334aeb714c50dcbfa443f8ee5a08e7
+build	Run actions/setup-java@v4	﻿2026-10-10T02:10:52.1684383Z ##[group]Run actions/setup-java@v4
+build	Run actions/setup-java@v4	2026-10-10T02:10:52.1685181Z with:
+build	Run actions/setup-java@v4	2026-10-10T02:10:52.1685597Z   java-version: 11
+build	Run actions/setup-java@v4	2026-10-10T02:10:52.1686043Z   distribution: adopt
+build	Run actions/setup-java@v4	2026-10-10T02:10:52.1686504Z   cache: gradle
+build	Run actions/setup-java@v4	2026-10-10T02:10:52.1686931Z   java-package: jdk
+build	Run actions/setup-java@v4	2026-10-10T02:10:52.1687376Z   check-latest: false
+build	Run actions/setup-java@v4	2026-10-10T02:10:52.1687823Z   server-id: github
+build	Run actions/setup-java@v4	2026-10-10T02:10:52.1688275Z   server-username: GITHUB_ACTOR
+build	Run actions/setup-java@v4	2026-10-10T02:10:52.1688793Z   server-password: GITHUB_TOKEN
+build	Run actions/setup-java@v4	2026-10-10T02:10:52.1689313Z   overwrite-settings: true
+build	Run actions/setup-java@v4	2026-10-10T02:10:52.1689790Z   job-status: success
+build	Run actions/setup-java@v4	2026-10-10T02:10:52.1694099Z   token: ***
+build	Run actions/setup-java@v4	2026-10-10T02:10:52.1694555Z ##[endgroup]
+build	Run actions/setup-java@v4	2026-10-10T02:10:52.3358396Z ##[warning]setup-java v4 is deprecated and will no longer receive updates. Please migrate to actions/setup-java@v5.
+build	Run actions/setup-java@v4	2026-10-10T02:10:52.3368707Z ##[group]Installed distributions
+build	Run actions/setup-java@v4	2026-10-10T02:10:52.3372047Z ##[warning]The 'adopt' legacy AdoptOpenJDK distribution is deprecated and will be removed in setup-java v6. Please migrate to the 'temurin' distribution.
+build	Run actions/setup-java@v4	2026-10-10T02:10:52.3374211Z Trying to resolve the latest version from remote
+build	Run actions/setup-java@v4	2026-10-10T02:10:52.3473159Z (node:2317) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+build	Run actions/setup-java@v4	2026-10-10T02:10:52.3474467Z (Use `node --trace-deprecation ...` to show where the warning was created)
+build	Run actions/setup-java@v4	2026-10-10T02:10:52.8540022Z Resolved latest version as 11.0.32+101
+build	Run actions/setup-java@v4	2026-10-10T02:10:52.8541659Z Trying to download...
+build	Run actions/setup-java@v4	2026-10-10T02:10:52.8544309Z Downloading Java 11.0.32+101 (Adopt-Hotspot) from https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.32.1%2B1/OpenJDK11U-jdk_x64_linux_hotspot_11.0.32.1_1.tar.gz ...
+build	Run actions/setup-java@v4	2026-10-10T02:10:53.9421328Z Extracting Java archive...
+build	Run actions/setup-java@v4	2026-10-10T02:10:53.9566277Z [command]/usr/bin/tar xz --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/353f266e-be8a-4744-b80c-333b2a839d75 -f /home/runner/work/_temp/f36540a9-b010-48bf-b594-ba8944ab9bbb
+build	Run actions/setup-java@v4	2026-10-10T02:10:56.5131208Z Java 11.0.32+101 was downloaded
+build	Run actions/setup-java@v4	2026-10-10T02:10:56.5131815Z Setting Java 11.0.32+101 as the default
+build	Run actions/setup-java@v4	2026-10-10T02:10:56.5145009Z Creating toolchains.xml for JDK version 11 from adopt
+build	Run actions/setup-java@v4	2026-10-10T02:10:56.5218157Z Writing to /home/runner/.m2/toolchains.xml
+build	Run actions/setup-java@v4	2026-10-10T02:10:56.5218822Z 
+build	Run actions/setup-java@v4	2026-10-10T02:10:56.5219090Z Java configuration:
+build	Run actions/setup-java@v4	2026-10-10T02:10:56.5220134Z   Distribution: adopt
+build	Run actions/setup-java@v4	2026-10-10T02:10:56.5220718Z   Version: 11.0.32+101
+build	Run actions/setup-java@v4	2026-10-10T02:10:56.5221664Z   Path: /opt/hostedtoolcache/Java_Adopt_jdk/11.0.32-101/x64
+build	Run actions/setup-java@v4	2026-10-10T02:10:56.5222247Z 
+build	Run actions/setup-java@v4	2026-10-10T02:10:56.5223061Z ##[endgroup]
+build	Run actions/setup-java@v4	2026-10-10T02:10:56.5243422Z Creating settings.xml with server-id: github
+build	Run actions/setup-java@v4	2026-10-10T02:10:56.5244354Z Writing to /home/runner/.m2/settings.xml
+build	Run actions/setup-java@v4	2026-10-10T02:10:56.6867543Z gradle cache is not found
+build	Run android-actions/setup-android@v3	﻿2026-10-10T02:10:56.7078125Z ##[warning]Unexpected input(s) 'api-level', 'ndk-version', valid inputs are ['cmdline-tools-version', 'accept-android-sdk-licenses', 'log-accepted-android-sdk-licenses', 'packages']
+build	Run android-actions/setup-android@v3	2026-10-10T02:10:56.7087016Z ##[group]Run android-actions/setup-android@v3
+build	Run android-actions/setup-android@v3	2026-10-10T02:10:56.7087392Z with:
+build	Run android-actions/setup-android@v3	2026-10-10T02:10:56.7087637Z   api-level: 31
+build	Run android-actions/setup-android@v3	2026-10-10T02:10:56.7087906Z   ndk-version: 21.4.7075529
+build	Run android-actions/setup-android@v3	2026-10-10T02:10:56.7088212Z   cmdline-tools-version: 12266719
+build	Run android-actions/setup-android@v3	2026-10-10T02:10:56.7088542Z   accept-android-sdk-licenses: true
+build	Run android-actions/setup-android@v3	2026-10-10T02:10:56.7088888Z   log-accepted-android-sdk-licenses: true
+build	Run android-actions/setup-android@v3	2026-10-10T02:10:56.7089234Z   packages: tools platform-tools
+build	Run android-actions/setup-android@v3	2026-10-10T02:10:56.7089524Z env:
+build	Run android-actions/setup-android@v3	2026-10-10T02:10:56.7089836Z   JAVA_HOME: /opt/hostedtoolcache/Java_Adopt_jdk/11.0.32-101/x64
+build	Run android-actions/setup-android@v3	2026-10-10T02:10:56.7090333Z   JAVA_HOME_11_X64: /opt/hostedtoolcache/Java_Adopt_jdk/11.0.32-101/x64
+build	Run android-actions/setup-android@v3	2026-10-10T02:10:56.7091054Z ##[endgroup]
+build	Run android-actions/setup-android@v3	2026-10-10T02:10:56.7932634Z Found preinstalled sdkmanager in /usr/local/lib/android/sdk/cmdline-tools/latest with following source.properties:
+build	Run android-actions/setup-android@v3	2026-10-10T02:10:56.7934163Z Pkg.Revision=12.0
+build	Run android-actions/setup-android@v3	2026-10-10T02:10:56.7934822Z Pkg.Path=cmdline-tools;12.0
+build	Run android-actions/setup-android@v3	2026-10-10T02:10:56.7935543Z Pkg.Desc=Android SDK Command-line Tools
+build	Run android-actions/setup-android@v3	2026-10-10T02:10:56.7936064Z 
+build	Run android-actions/setup-android@v3	2026-10-10T02:10:56.7936876Z Wrong version in preinstalled sdkmanager
+build	Run android-actions/setup-android@v3	2026-10-10T02:10:56.7938311Z Downloading commandline tools from https://dl.google.com/android/repository/commandlinetools-linux-12266719_latest.zip
+build	Run android-actions/setup-android@v3	2026-10-10T02:10:57.7703219Z [command]/usr/bin/unzip -o -q /home/runner/work/_temp/3ea101c3-3220-4c88-8ede-8093647a5c3a
+build	Run android-actions/setup-android@v3	2026-10-10T02:10:58.5353517Z Accepting Android SDK licenses
+build	Run android-actions/setup-android@v3	2026-10-10T02:10:58.5359131Z [command]/usr/local/lib/android/sdk/cmdline-tools/16.0/bin/sdkmanager --licenses
+build	Run android-actions/setup-android@v3	2026-10-10T02:10:58.6711154Z This tool requires JDK 17 or later. Your version was detected as 11.0.32.1.
+build	Run android-actions/setup-android@v3	2026-10-10T02:10:58.6711752Z To override this check, set SKIP_JDK_VERSION_CHECK.
+build	Run android-actions/setup-android@v3	2026-10-10T02:10:58.6758265Z /home/runner/work/_actions/android-actions/setup-android/v3/dist/index.js:1823
+build	Run android-actions/setup-android@v3	2026-10-10T02:10:58.6759473Z                 error = new Error(`The process '${this.toolPath}' failed with exit code ${this.processExitCode}`);
+build	Run android-actions/setup-android@v3	2026-10-10T02:10:58.6760060Z                         ^
+build	Run android-actions/setup-android@v3	2026-10-10T02:10:58.6760230Z 
+build	Run android-actions/setup-android@v3	2026-10-10T02:10:58.6761097Z Error: The process '/usr/local/lib/android/sdk/cmdline-tools/16.0/bin/sdkmanager' failed with exit code 1
+build	Run android-actions/setup-android@v3	2026-10-10T02:10:58.6761912Z     at ExecState._setResult (/home/runner/work/_actions/android-actions/setup-android/v3/dist/index.js:1823:25)
+build	Run android-actions/setup-android@v3	2026-10-10T02:10:58.6763174Z     at ExecState.CheckComplete (/home/runner/work/_actions/android-actions/setup-android/v3/dist/index.js:1806:18)
+build	Run android-actions/setup-android@v3	2026-10-10T02:10:58.6764123Z     at ChildProcess.<anonymous> (/home/runner/work/_actions/android-actions/setup-android/v3/dist/index.js:1700:27)
+build	Run android-actions/setup-android@v3	2026-10-10T02:10:58.6764701Z     at ChildProcess.emit (node:events:509:28)
+build	Run android-actions/setup-android@v3	2026-10-10T02:10:58.6765045Z     at maybeClose (node:internal/child_process:1141:16)
+build	Run android-actions/setup-android@v3	2026-10-10T02:10:58.6765456Z     at Socket.<anonymous> (node:internal/child_process:498:11)
+build	Run android-actions/setup-android@v3	2026-10-10T02:10:58.6765813Z     at Socket.emit (node:events:509:28)
+build	Run android-actions/setup-android@v3	2026-10-10T02:10:58.6766097Z     at Pipe.<anonymous> (node:net:355:12)
+build	Run android-actions/setup-android@v3	2026-10-10T02:10:58.6766288Z 
+build	Run android-actions/setup-android@v3	2026-10-10T02:10:58.6766371Z Node.js v24.19.0
+build	Post Run actions/setup-java@v4	﻿2026-10-10T02:10:58.7026615Z Post job cleanup.
+build	Post Run actions/setup-java@v4	2026-10-10T02:10:58.8368107Z (node:2396) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+build	Post Run actions/setup-java@v4	2026-10-10T02:10:58.8368937Z (Use `node --trace-deprecation ...` to show where the warning was created)
+build	Post Run actions/checkout@v4	﻿2026-10-10T02:10:58.8609665Z Post job cleanup.
+build	Post Run actions/checkout@v4	2026-10-10T02:10:58.9505976Z [command]/usr/bin/git version
+build	Post Run actions/checkout@v4	2026-10-10T02:10:58.9550125Z git version 2.55.0
+build	Post Run actions/checkout@v4	2026-10-10T02:10:58.9588654Z Temporarily overriding HOME='/home/runner/work/_temp/b5ac16c9-8de2-4a12-bba2-c4f727cd27a1' before making global git config changes
+build	Post Run actions/checkout@v4	2026-10-10T02:10:58.9590786Z Adding repository directory to the temporary git global config as a safe directory
+build	Post Run actions/checkout@v4	2026-10-10T02:10:58.9594519Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/XWorldCheat/XWorldCheat
+build	Post Run actions/checkout@v4	2026-10-10T02:10:58.9634310Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build	Post Run actions/checkout@v4	2026-10-10T02:10:58.9669649Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build	Post Run actions/checkout@v4	2026-10-10T02:10:58.9925464Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build	Post Run actions/checkout@v4	2026-10-10T02:10:58.9955918Z http.https://github.com/.extraheader
+build	Post Run actions/checkout@v4	2026-10-10T02:10:58.9980020Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+build	Post Run actions/checkout@v4	2026-10-10T02:10:59.0017899Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build	Post Run actions/checkout@v4	2026-10-10T02:10:59.0267664Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+build	Post Run actions/checkout@v4	2026-10-10T02:10:59.0310080Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+build	Complete job	﻿2026-10-10T02:10:59.0749003Z Cleaning up orphan processes
+build	Complete job	2026-10-10T02:10:59.1037528Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-java@v4, android-actions/setup-android@v3. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
